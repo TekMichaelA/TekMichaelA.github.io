@@ -24,13 +24,14 @@ var init = function (window) {
         var circles = []
 
         // TODO 2 : Create a function that draws a circle 
+        var drawCircle
         circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
         physikz.addRandomVelocity(circle, canvas);
         view.addChild(circle);
         circles.push(circle);
 
         // TODO 3 / 7 : Call the drawCircle() function 
-
+        nameOfFunction();
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -43,7 +44,7 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
+          physikz.updatePosition()
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
 
